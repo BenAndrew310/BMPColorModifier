@@ -5,7 +5,6 @@ Currently support images with color depth of:
 	- 24 bpp
 ---------------------------------------------
 author: Benchley André
-email : bensoftware0101@gmail.com
 """
 
 import os,sys
