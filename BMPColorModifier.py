@@ -49,7 +49,7 @@ class BMPByteTools:
 
 
 class BMPColorModifier(BMPByteTools):
-	supported_bpp=[4, 24]
+	SUPPORTED_BPP=[4, 24]
 
 	OPERATIONS={
 		4:["filtering", "darkening"],
@@ -304,10 +304,10 @@ if __name__=="__main__":
 
 			bpp = bcm.get_bpp(data)
 
-			if bpp not in BMPColorModifier.supported_bpp:
+			if bpp not in BMPColorModifier.SUPPORTED_BPP:
 				print("[info] such image depth is not supported")
 				print("[info] supported image depth: ", end="")
-				for BPP in BMPColorModifier.supported_bpp:
+				for BPP in BMPColorModifier.SUPPORTED_BPP:
 					print(BPP, end=" ")
 				print()
 				os.system("pause")
